@@ -5,7 +5,7 @@ apt-get install subversion libssl-dev libdnet-dev libpcre++-dev libpcre2-dev cla
 svn checkout https://svn.nmap.org/nmap/
 cd nmap
 # Build using clang
-CC=clang CXX=clang++ ./configure && make -j && make install
+CC=clang CXX=clang++ ./configure && make && make install
 # Remove build files
 cd ../
 rm -rf nmap
